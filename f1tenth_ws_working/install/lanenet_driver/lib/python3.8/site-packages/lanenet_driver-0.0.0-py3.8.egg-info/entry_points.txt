@@ -1,0 +1,3 @@
+[console_scripts]
+lanenet_driver_node = lanenet_driver.lanenet_driver_node:main
+

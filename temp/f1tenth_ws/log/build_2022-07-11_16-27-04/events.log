@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.002113] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002734] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003623] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.003839] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004029] (-) JobUnselected: {'identifier': 'planned_path'}
+[0.004185] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.004286] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.004410] (-) JobUnselected: {'identifier': 'vesc'}
+[0.006618] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006843] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.007027] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007151] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/yvxaiver/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/yvxaiver/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/yvxaiver/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/yvxaiver/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/yvxaiver/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/yvxaiver/f1tenth_ws/install/vesc')])}
+[0.007326] (f1tenth_stack) JobStarted: {'identifier': 'f1tenth_stack'}
+[0.099488] (-) TimerEvent: {}
+[0.202875] (-) TimerEvent: {}
+[0.306005] (-) TimerEvent: {}
+[0.407341] (-) TimerEvent: {}
+[0.508289] (-) TimerEvent: {}
+[0.609715] (-) TimerEvent: {}
+[0.710701] (-) TimerEvent: {}
+[0.814704] (-) TimerEvent: {}
+[0.917538] (-) TimerEvent: {}
+[1.018683] (-) TimerEvent: {}
+[1.119497] (-) TimerEvent: {}
+[1.220765] (-) TimerEvent: {}
+[1.322696] (-) TimerEvent: {}
+[1.424945] (-) TimerEvent: {}
+[1.530270] (-) TimerEvent: {}
+[1.634154] (-) TimerEvent: {}
+[1.735233] (-) TimerEvent: {}
+[1.837322] (-) TimerEvent: {}
+[1.938192] (-) TimerEvent: {}
+[2.039099] (-) TimerEvent: {}
+[2.139920] (-) TimerEvent: {}
+[2.240766] (-) TimerEvent: {}
+[2.341714] (-) TimerEvent: {}
+[2.442810] (-) TimerEvent: {}
+[2.544077] (-) TimerEvent: {}
+[2.644908] (-) TimerEvent: {}
+[2.745880] (-) TimerEvent: {}
+[2.847107] (-) TimerEvent: {}
+[2.948028] (-) TimerEvent: {}
+[3.049162] (-) TimerEvent: {}
+[3.150140] (-) TimerEvent: {}
+[3.251736] (-) TimerEvent: {}
+[3.319023] (f1tenth_stack) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/f1tenth_stack', 'build', '--build-base', '/home/yvxaiver/f1tenth_ws/build/f1tenth_stack/build', 'install', '--prefix', '/home/yvxaiver/f1tenth_ws/install/f1tenth_stack', '--record', '/home/yvxaiver/f1tenth_ws/build/f1tenth_stack/install.log', '--single-version-externally-managed'], 'cwd': '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/f1tenth_stack', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'yvxaiver', 'SSH_AGENT_PID': '3375', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yvxaiver/f1tenth_ws/install/vesc_driver/lib:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann/lib:/home/yvxaiver/f1tenth_ws/install/vesc_msgs/lib:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs/lib:/home/yvxaiver/camera_ws/install/usb_camera_driver/lib:/home/yvxaiver/camera_ws/install/usb_cam/lib:/home/yvxaiver/f1tenth_ws/install/v4l2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64', 'HOME': '/home/yvxaiver', 'OLDPWD': '/home/yvxaiver', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'MANAGERPID': '2980', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yvxaiver/camera_ws/install:/home/yvxaiver/f1tenth_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yvxaiver', 'JOURNAL_STREAM': '7:58961', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/yvxaiver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/3410,unix/ubuntu:/tmp/.ICE-unix/3410', 'GDM_LANG': 'en_US', 'INVOCATION_ID': '307deb8e44c8486ba7db74fb6801403f', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfaa4ccd_f2d4_4b8e_9e93_31b90bc7e9ee', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/yvxaiver/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/yvxaiver', 'AMENT_PREFIX_PATH': '/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/camera_ws/install/usb_camera_driver:/home/yvxaiver/camera_ws/install/usb_cam:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/vesc:/home/yvxaiver/f1tenth_ws/install/vesc_driver:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann:/home/yvxaiver/f1tenth_ws/install/vesc_msgs:/home/yvxaiver/f1tenth_ws/install/v4l2_camera:/home/yvxaiver/f1tenth_ws/install/teleop_tools:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yvxaiver/f1tenth_ws/build/f1tenth_stack', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/image_processor/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yvxaiver/f1tenth_ws/install/vesc:/home/yvxaiver/f1tenth_ws/install/vesc_driver:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann:/home/yvxaiver/f1tenth_ws/install/vesc_msgs:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs:/home/yvxaiver/f1tenth_ws/install/ackermann_mux:/home/yvxaiver/camera_ws/install/usb_camera_driver:/home/yvxaiver/camera_ws/install/usb_cam:/home/yvxaiver/f1tenth_ws/install/v4l2_camera:/home/yvxaiver/f1tenth_ws/install/teleop_tools'}, 'shell': False}
+[3.352209] (-) TimerEvent: {}
+[3.453622] (-) TimerEvent: {}
+[3.555714] (-) TimerEvent: {}
+[3.657321] (-) TimerEvent: {}
+[3.758223] (-) TimerEvent: {}
+[3.859891] (-) TimerEvent: {}
+[3.960797] (-) TimerEvent: {}
+[4.062551] (-) TimerEvent: {}
+[4.163507] (-) TimerEvent: {}
+[4.264557] (-) TimerEvent: {}
+[4.365441] (-) TimerEvent: {}
+[4.467464] (-) TimerEvent: {}
+[4.538173] (f1tenth_stack) StdoutLine: {'line': b'running egg_info\n'}
+[4.543322] (f1tenth_stack) StdoutLine: {'line': b'writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO\n'}
+[4.544075] (f1tenth_stack) StdoutLine: {'line': b'writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt\n'}
+[4.545350] (f1tenth_stack) StdoutLine: {'line': b'writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt\n'}
+[4.546141] (f1tenth_stack) StdoutLine: {'line': b'writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt\n'}
+[4.547081] (f1tenth_stack) StdoutLine: {'line': b'writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt\n'}
+[4.567628] (-) TimerEvent: {}
+[4.668629] (-) TimerEvent: {}
+[4.722101] (f1tenth_stack) StdoutLine: {'line': b"reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[4.725588] (f1tenth_stack) StdoutLine: {'line': b"writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[4.726389] (f1tenth_stack) StdoutLine: {'line': b'running build\n'}
+[4.726793] (f1tenth_stack) StdoutLine: {'line': b'running build_py\n'}
+[4.728409] (f1tenth_stack) StdoutLine: {'line': b'running install\n'}
+[4.731611] (f1tenth_stack) StdoutLine: {'line': b'running install_lib\n'}
+[4.739547] (f1tenth_stack) StdoutLine: {'line': b'running install_data\n'}
+[4.741231] (f1tenth_stack) StdoutLine: {'line': b'copying config/vesc.yaml -> /home/yvxaiver/f1tenth_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[4.742291] (f1tenth_stack) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.750484] (f1tenth_stack) StdoutLine: {'line': b"removing '/home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[4.751874] (f1tenth_stack) StdoutLine: {'line': b'Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info\n'}
+[4.755615] (f1tenth_stack) StdoutLine: {'line': b'running install_scripts\n'}
+[4.768808] (-) TimerEvent: {}
+[4.822519] (f1tenth_stack) StdoutLine: {'line': b'Installing tf_publisher script to /home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[4.824235] (f1tenth_stack) StdoutLine: {'line': b'Installing throttle_interpolator script to /home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[4.827051] (f1tenth_stack) StdoutLine: {'line': b"writing list of installed files to '/home/yvxaiver/f1tenth_ws/build/f1tenth_stack/install.log'\n"}
+[4.869106] (-) TimerEvent: {}
+[4.918487] (f1tenth_stack) CommandEnded: {'returncode': 0}
+[4.970194] (-) TimerEvent: {}
+[4.978310] (f1tenth_stack) JobEnded: {'identifier': 'f1tenth_stack', 'rc': 0}
+[4.980937] (-) EventReactorShutdown: {}

@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2877, in get_entry_map
+    ep_map = self._ep_map
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2835, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _ep_map
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    setup(
+  File "/usr/local/lib/python3.8/dist-packages/setuptools/__init__.py", line 162, in setup
+    _install_setup_requires(attrs)
+  File "/usr/local/lib/python3.8/dist-packages/setuptools/__init__.py", line 152, in _install_setup_requires
+    dist = MinimalDistribution(attrs)
+  File "/usr/local/lib/python3.8/dist-packages/setuptools/__init__.py", line 144, in __init__
+    distutils.core.Distribution.__init__(self, filtered)
+  File "/usr/local/lib/python3.8/dist-packages/setuptools/dist.py", line 427, in __init__
+    for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 655, in <genexpr>
+    for entry in dist.get_entry_map(group).values()
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2879, in get_entry_map
+    ep_map = self._ep_map = EntryPoint.parse_map(
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2564, in parse_map
+    maps[group] = cls.parse_group(group, lines, dist)
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2542, in parse_group
+    ep = cls.parse(line, dist)
+  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2517, in parse
+    m = cls.pattern.match(src)
+KeyboardInterrupt

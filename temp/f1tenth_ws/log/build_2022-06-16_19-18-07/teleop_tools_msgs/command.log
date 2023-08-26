@@ -1,0 +1,6 @@
+Invoking command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yvxaiver/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DCMAKE_INSTALL_PREFIX=/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs
+Invoked command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yvxaiver/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DCMAKE_INSTALL_PREFIX=/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs
+Invoking command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs -- -j4 -l4
+Invoked command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs -- -j4 -l4
+Invoking command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs
+Invoked command in '/home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/f1tenth_ws/build/teleop_tools_msgs

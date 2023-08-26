@@ -1,0 +1,24 @@
+[4.559s] Invoking command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/lanenet_driver': PYTHONPATH=/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/lanenet_driver build --build-base /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build install --prefix /home/yvxaiver/f1tenth_ws/install/lanenet_driver --record /home/yvxaiver/f1tenth_ws/build/lanenet_driver/install.log --single-version-externally-managed
+[6.008s] running egg_info
+[6.009s] writing ../../../build/lanenet_driver/lanenet_driver.egg-info/PKG-INFO
+[6.012s] writing dependency_links to ../../../build/lanenet_driver/lanenet_driver.egg-info/dependency_links.txt
+[6.013s] writing entry points to ../../../build/lanenet_driver/lanenet_driver.egg-info/entry_points.txt
+[6.013s] writing requirements to ../../../build/lanenet_driver/lanenet_driver.egg-info/requires.txt
+[6.014s] writing top-level names to ../../../build/lanenet_driver/lanenet_driver.egg-info/top_level.txt
+[6.198s] reading manifest file '../../../build/lanenet_driver/lanenet_driver.egg-info/SOURCES.txt'
+[6.204s] writing manifest file '../../../build/lanenet_driver/lanenet_driver.egg-info/SOURCES.txt'
+[6.206s] running build
+[6.210s] running build_py
+[6.211s] copying lanenet_driver/lanenet_driver_node.py -> /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build/lib/lanenet_driver
+[6.212s] running install
+[6.212s] running install_lib
+[6.217s] copying /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build/lib/lanenet_driver/lanenet_driver_node.py -> /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver
+[6.223s] byte-compiling /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver/lanenet_driver_node.py to lanenet_driver_node.cpython-38.pyc
+[6.227s] running install_data
+[6.235s] running install_egg_info
+[6.240s] removing '/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver-0.0.0-py3.8.egg-info' (and everything under it)
+[6.249s] Copying ../../../build/lanenet_driver/lanenet_driver.egg-info to /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver-0.0.0-py3.8.egg-info
+[6.249s] running install_scripts
+[6.313s] Installing lanenet_driver_node script to /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/lanenet_driver
+[6.317s] writing list of installed files to '/home/yvxaiver/f1tenth_ws/build/lanenet_driver/install.log'
+[6.425s] Invoked command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/lanenet_driver' returned '0': PYTHONPATH=/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/lanenet_driver build --build-base /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build install --prefix /home/yvxaiver/f1tenth_ws/install/lanenet_driver --record /home/yvxaiver/f1tenth_ws/build/lanenet_driver/install.log --single-version-externally-managed

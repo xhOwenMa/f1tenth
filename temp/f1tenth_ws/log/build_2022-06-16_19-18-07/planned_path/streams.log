@@ -1,0 +1,37 @@
+[8.320s] Invoking command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/planned_path': PYTHONPATH=/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/planned_path build --build-base /home/yvxaiver/f1tenth_ws/build/planned_path/build install --prefix /home/yvxaiver/f1tenth_ws/install/planned_path --record /home/yvxaiver/f1tenth_ws/build/planned_path/install.log --single-version-externally-managed
+[11.209s] running egg_info
+[11.219s] creating ../../../build/planned_path/planned_path.egg-info
+[11.220s] writing ../../../build/planned_path/planned_path.egg-info/PKG-INFO
+[11.220s] writing dependency_links to ../../../build/planned_path/planned_path.egg-info/dependency_links.txt
+[11.221s] writing entry points to ../../../build/planned_path/planned_path.egg-info/entry_points.txt
+[11.221s] writing requirements to ../../../build/planned_path/planned_path.egg-info/requires.txt
+[11.222s] writing top-level names to ../../../build/planned_path/planned_path.egg-info/top_level.txt
+[11.321s] writing manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+[11.675s] reading manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+[11.692s] writing manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+[11.695s] running build
+[11.696s] running build_py
+[11.697s] creating /home/yvxaiver/f1tenth_ws/build/planned_path/build
+[11.698s] creating /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib
+[11.699s] creating /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib/planned_path
+[11.700s] copying planned_path/__init__.py -> /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib/planned_path
+[11.701s] copying planned_path/ppath_control.py -> /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib/planned_path
+[11.701s] running install
+[11.706s] running install_lib
+[11.710s] creating /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+[11.711s] copying /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib/planned_path/__init__.py -> /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+[11.711s] copying /home/yvxaiver/f1tenth_ws/build/planned_path/build/lib/planned_path/ppath_control.py -> /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+[11.725s] byte-compiling /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path/__init__.py to __init__.cpython-38.pyc
+[11.726s] byte-compiling /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path/ppath_control.py to ppath_control.cpython-38.pyc
+[11.730s] running install_data
+[11.732s] creating /home/yvxaiver/f1tenth_ws/install/planned_path/share/ament_index
+[11.733s] creating /home/yvxaiver/f1tenth_ws/install/planned_path/share/ament_index/resource_index
+[11.733s] creating /home/yvxaiver/f1tenth_ws/install/planned_path/share/ament_index/resource_index/packages
+[11.733s] copying resource/planned_path -> /home/yvxaiver/f1tenth_ws/install/planned_path/share/ament_index/resource_index/packages
+[11.734s] copying package.xml -> /home/yvxaiver/f1tenth_ws/install/planned_path/share/planned_path
+[11.734s] running install_egg_info
+[11.741s] Copying ../../../build/planned_path/planned_path.egg-info to /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path-0.0.0-py3.8.egg-info
+[11.745s] running install_scripts
+[11.825s] Installing ppath script to /home/yvxaiver/f1tenth_ws/install/planned_path/lib/planned_path
+[11.826s] writing list of installed files to '/home/yvxaiver/f1tenth_ws/build/planned_path/install.log'
+[11.985s] Invoked command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/planned_path' returned '0': PYTHONPATH=/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/planned_path build --build-base /home/yvxaiver/f1tenth_ws/build/planned_path/build install --prefix /home/yvxaiver/f1tenth_ws/install/planned_path --record /home/yvxaiver/f1tenth_ws/build/planned_path/install.log --single-version-externally-managed

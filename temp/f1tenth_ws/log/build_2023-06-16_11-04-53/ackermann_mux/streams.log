@@ -1,0 +1,38 @@
+[0.515s] Invoking command in '/home/yvxaiver/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[4.476s] [100%] Built target ackermann_mux
+[6.099s] Invoked command in '/home/yvxaiver/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[6.498s] Invoking command in '/home/yvxaiver/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/f1tenth_ws/build/ackermann_mux
+[6.597s] -- Install configuration: ""
+[6.611s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[6.615s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch
+[6.616s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[6.616s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config
+[6.618s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[6.619s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[6.619s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[6.620s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include
+[6.622s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux
+[6.622s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[6.623s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[6.624s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[6.624s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[6.625s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[6.627s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[6.628s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[6.628s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[6.629s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[6.629s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[6.630s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[6.631s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[6.642s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[6.643s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[6.643s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[6.659s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[6.664s] -- Installing: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[6.667s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[6.675s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.676s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.676s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[6.677s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[6.677s] -- Up-to-date: /home/yvxaiver/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[6.694s] Invoked command in '/home/yvxaiver/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/f1tenth_ws/build/ackermann_mux

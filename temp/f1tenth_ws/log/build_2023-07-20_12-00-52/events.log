@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.002207] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.003595] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003910] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.004147] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004387] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004512] (-) JobUnselected: {'identifier': 'planned_path'}
+[0.004656] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.004807] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.004924] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005051] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.005155] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.005254] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.005365] (lanenet_driver) JobQueued: {'identifier': 'lanenet_driver', 'dependencies': OrderedDict()}
+[0.005485] (lanenet_driver) JobStarted: {'identifier': 'lanenet_driver'}
+[0.098700] (-) TimerEvent: {}
+[0.201061] (-) TimerEvent: {}
+[0.304232] (-) TimerEvent: {}
+[0.405217] (-) TimerEvent: {}
+[0.506278] (-) TimerEvent: {}
+[0.609168] (-) TimerEvent: {}
+[0.710386] (-) TimerEvent: {}
+[0.811448] (-) TimerEvent: {}
+[0.912565] (-) TimerEvent: {}
+[1.013978] (-) TimerEvent: {}
+[1.115399] (-) TimerEvent: {}
+[1.217279] (-) TimerEvent: {}
+[1.318437] (-) TimerEvent: {}
+[1.419618] (-) TimerEvent: {}
+[1.520679] (-) TimerEvent: {}
+[1.621697] (-) TimerEvent: {}
+[1.722717] (-) TimerEvent: {}
+[1.825314] (-) TimerEvent: {}
+[1.927920] (-) TimerEvent: {}
+[2.030320] (-) TimerEvent: {}
+[2.133076] (-) TimerEvent: {}
+[2.234587] (-) TimerEvent: {}
+[2.335893] (-) TimerEvent: {}
+[2.438353] (-) TimerEvent: {}
+[2.539583] (-) TimerEvent: {}
+[2.640591] (-) TimerEvent: {}
+[2.741622] (-) TimerEvent: {}
+[2.843150] (-) TimerEvent: {}
+[2.944734] (-) TimerEvent: {}
+[3.045908] (-) TimerEvent: {}
+[3.146908] (-) TimerEvent: {}
+[3.250402] (-) TimerEvent: {}
+[3.351815] (-) TimerEvent: {}
+[3.453996] (-) TimerEvent: {}
+[3.555114] (-) TimerEvent: {}
+[3.656205] (-) TimerEvent: {}
+[3.758916] (-) TimerEvent: {}
+[3.859944] (-) TimerEvent: {}
+[3.961194] (-) TimerEvent: {}
+[4.064478] (-) TimerEvent: {}
+[4.165503] (-) TimerEvent: {}
+[4.267235] (-) TimerEvent: {}
+[4.369155] (-) TimerEvent: {}
+[4.470692] (-) TimerEvent: {}
+[4.571745] (-) TimerEvent: {}
+[4.672684] (-) TimerEvent: {}
+[4.773696] (-) TimerEvent: {}
+[4.874798] (-) TimerEvent: {}
+[4.975707] (-) TimerEvent: {}
+[5.076766] (-) TimerEvent: {}
+[5.178775] (-) TimerEvent: {}
+[5.267268] (lanenet_driver) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/lanenet_driver', 'build', '--build-base', '/home/yvxaiver/f1tenth_ws/build/lanenet_driver/build', 'install', '--record', '/home/yvxaiver/f1tenth_ws/build/lanenet_driver/install.log', '--install-scripts', '$base/lib/lanenet_driver', '--single-version-externally-managed'], 'cwd': '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/lanenet_driver', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'yvxaiver', 'SSH_AGENT_PID': '2964', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yvxaiver/f1tenth_ws/install/vesc_driver/lib:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann/lib:/home/yvxaiver/f1tenth_ws/install/vesc_msgs/lib:/home/yvxaiver/f1tenth_ws/install/v4l2_camera/lib:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs/lib:/home/yvxaiver/camera_ws/install/usb_camera_driver/lib:/home/yvxaiver/camera_ws/install/usb_cam/lib:/home/yvxaiver/camera_ws/install/points_vector/lib:/home/yvxaiver/camera_ws/install/lanenet_out/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'HOME': '/home/yvxaiver', 'OLDPWD': '/home/yvxaiver', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '34.1.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'JETSON_MODEL': 'NVIDIA Jetson Xavier NX Developer Kit', 'MANAGERPID': '2630', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yvxaiver/camera_ws/install:/home/yvxaiver/f1tenth_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yvxaiver', 'JETSON_MODULE': 'NVIDIA Jetson Xavier NX (Developer kit)', 'JETSON_SERIAL_NUMBER': '1424621001269', 'JOURNAL_STREAM': '7:59447', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Jakku', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/yvxaiver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/3013,unix/ubuntu:/tmp/.ICE-unix/3013', 'GDM_LANG': 'en_US', 'INVOCATION_ID': '92a12995e28741c299fabe17fbab80ce', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c32af820_cbf3_44b0_a180_cf0abf124fcf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/yvxaiver/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/yvxaiver', 'AMENT_PREFIX_PATH': '/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/vesc:/home/yvxaiver/f1tenth_ws/install/vesc_driver:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann:/home/yvxaiver/f1tenth_ws/install/vesc_msgs:/home/yvxaiver/f1tenth_ws/install/v4l2_camera:/home/yvxaiver/f1tenth_ws/install/teleop_tools:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/f1tenth_ws/install/ackermann_mux:/home/yvxaiver/camera_ws/install/usb_camera_driver:/home/yvxaiver/camera_ws/install/usb_cam:/home/yvxaiver/camera_ws/install/camera_bringup:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/ros2_numpy:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/points_vector:/home/yvxaiver/camera_ws/install/inv_mux:/home/yvxaiver/camera_ws/install/lanenet_out:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/yvxaiver/f1tenth_ws/build/lanenet_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yvxaiver/f1tenth_ws/build/lanenet_driver/prefix_override:/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages:/home/yvxaiver/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/lanenet_postprocess/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/ros2_numpy/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/image_processor/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/points_vector/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/inv_mux/lib/python3.8/site-packages:/home/yvxaiver/camera_ws/install/lanenet_out/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '5.0.1 DP', 'CMAKE_PREFIX_PATH': '/home/yvxaiver/f1tenth_ws/install/vesc:/home/yvxaiver/f1tenth_ws/install/vesc_driver:/home/yvxaiver/f1tenth_ws/install/vesc_ackermann:/home/yvxaiver/f1tenth_ws/install/vesc_msgs:/home/yvxaiver/f1tenth_ws/install/v4l2_camera:/home/yvxaiver/f1tenth_ws/install/teleop_tools:/home/yvxaiver/f1tenth_ws/install/teleop_tools_msgs:/home/yvxaiver/f1tenth_ws/install/ackermann_mux:/home/yvxaiver/camera_ws/install/usb_camera_driver:/home/yvxaiver/camera_ws/install/usb_cam:/home/yvxaiver/camera_ws/install/camera_bringup:/home/yvxaiver/camera_ws/install/ros2_numpy:/home/yvxaiver/camera_ws/install/points_vector:/home/yvxaiver/camera_ws/install/lanenet_out', 'JETSON_P_NUMBER': 'p3668-0000'}, 'shell': False}
+[5.278980] (-) TimerEvent: {}
+[5.380979] (-) TimerEvent: {}
+[5.484751] (-) TimerEvent: {}
+[5.586081] (-) TimerEvent: {}
+[5.687210] (-) TimerEvent: {}
+[5.788387] (-) TimerEvent: {}
+[5.889395] (-) TimerEvent: {}
+[5.990473] (-) TimerEvent: {}
+[6.091694] (-) TimerEvent: {}
+[6.193083] (-) TimerEvent: {}
+[6.294182] (-) TimerEvent: {}
+[6.395155] (-) TimerEvent: {}
+[6.496965] (-) TimerEvent: {}
+[6.598312] (-) TimerEvent: {}
+[6.699425] (-) TimerEvent: {}
+[6.800470] (-) TimerEvent: {}
+[6.901614] (-) TimerEvent: {}
+[6.931695] (lanenet_driver) StdoutLine: {'line': b'running egg_info\n'}
+[6.935221] (lanenet_driver) StdoutLine: {'line': b'writing ../../../build/lanenet_driver/lanenet_driver.egg-info/PKG-INFO\n'}
+[6.940412] (lanenet_driver) StdoutLine: {'line': b'writing dependency_links to ../../../build/lanenet_driver/lanenet_driver.egg-info/dependency_links.txt\n'}
+[6.941421] (lanenet_driver) StdoutLine: {'line': b'writing entry points to ../../../build/lanenet_driver/lanenet_driver.egg-info/entry_points.txt\n'}
+[6.942511] (lanenet_driver) StdoutLine: {'line': b'writing requirements to ../../../build/lanenet_driver/lanenet_driver.egg-info/requires.txt\n'}
+[6.943172] (lanenet_driver) StdoutLine: {'line': b'writing top-level names to ../../../build/lanenet_driver/lanenet_driver.egg-info/top_level.txt\n'}
+[7.001723] (-) TimerEvent: {}
+[7.104855] (-) TimerEvent: {}
+[7.191264] (lanenet_driver) StdoutLine: {'line': b"reading manifest file '../../../build/lanenet_driver/lanenet_driver.egg-info/SOURCES.txt'\n"}
+[7.200277] (lanenet_driver) StdoutLine: {'line': b"writing manifest file '../../../build/lanenet_driver/lanenet_driver.egg-info/SOURCES.txt'\n"}
+[7.202708] (lanenet_driver) StdoutLine: {'line': b'running build\n'}
+[7.203374] (lanenet_driver) StdoutLine: {'line': b'running build_py\n'}
+[7.204639] (lanenet_driver) StdoutLine: {'line': b'copying lanenet_driver/lanenet_driver_node.py -> /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build/lib/lanenet_driver\n'}
+[7.205227] (-) TimerEvent: {}
+[7.225233] (lanenet_driver) StdoutLine: {'line': b'running install\n'}
+[7.229240] (lanenet_driver) StdoutLine: {'line': b'running install_lib\n'}
+[7.236874] (lanenet_driver) StdoutLine: {'line': b'copying /home/yvxaiver/f1tenth_ws/build/lanenet_driver/build/lib/lanenet_driver/lanenet_driver_node.py -> /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver\n'}
+[7.240624] (lanenet_driver) StdoutLine: {'line': b'byte-compiling /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver/lanenet_driver_node.py to lanenet_driver_node.cpython-38.pyc\n'}
+[7.246102] (lanenet_driver) StdoutLine: {'line': b'running install_data\n'}
+[7.249469] (lanenet_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.257178] (lanenet_driver) StdoutLine: {'line': b"removing '/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.259941] (lanenet_driver) StdoutLine: {'line': b'Copying ../../../build/lanenet_driver/lanenet_driver.egg-info to /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver-0.0.0-py3.8.egg-info\n'}
+[7.266140] (lanenet_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[7.305479] (-) TimerEvent: {}
+[7.350197] (lanenet_driver) StdoutLine: {'line': b'Installing lanenet_driver_node script to /home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/lanenet_driver\n'}
+[7.353340] (lanenet_driver) StdoutLine: {'line': b"writing list of installed files to '/home/yvxaiver/f1tenth_ws/build/lanenet_driver/install.log'\n"}
+[7.406658] (-) TimerEvent: {}
+[7.467666] (lanenet_driver) CommandEnded: {'returncode': 0}
+[7.507270] (-) TimerEvent: {}
+[7.613969] (-) TimerEvent: {}
+[7.616578] (lanenet_driver) JobEnded: {'identifier': 'lanenet_driver', 'rc': 0}
+[7.620663] (-) EventReactorShutdown: {}

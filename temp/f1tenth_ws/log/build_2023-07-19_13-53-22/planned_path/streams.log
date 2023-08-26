@@ -1,0 +1,21 @@
+[6.890s] Invoking command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/planned_path': PYTHONPATH=/home/yvxaiver/f1tenth_ws/build/planned_path/prefix_override:/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/planned_path build --build-base /home/yvxaiver/f1tenth_ws/build/planned_path/build install --record /home/yvxaiver/f1tenth_ws/build/planned_path/install.log --install-scripts $base/lib/planned_path --single-version-externally-managed
+[8.979s] running egg_info
+[8.981s] writing ../../../build/planned_path/planned_path.egg-info/PKG-INFO
+[8.982s] writing dependency_links to ../../../build/planned_path/planned_path.egg-info/dependency_links.txt
+[8.991s] writing entry points to ../../../build/planned_path/planned_path.egg-info/entry_points.txt
+[8.993s] writing requirements to ../../../build/planned_path/planned_path.egg-info/requires.txt
+[8.994s] writing top-level names to ../../../build/planned_path/planned_path.egg-info/top_level.txt
+[9.249s] reading manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+[9.254s] writing manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+[9.256s] running build
+[9.256s] running build_py
+[9.260s] running install
+[9.264s] running install_lib
+[9.279s] running install_data
+[9.280s] running install_egg_info
+[9.287s] removing '/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path-0.0.0-py3.8.egg-info' (and everything under it)
+[9.288s] Copying ../../../build/planned_path/planned_path.egg-info to /home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path-0.0.0-py3.8.egg-info
+[9.299s] running install_scripts
+[9.397s] Installing ppath script to /home/yvxaiver/f1tenth_ws/install/planned_path/lib/planned_path
+[9.400s] writing list of installed files to '/home/yvxaiver/f1tenth_ws/build/planned_path/install.log'
+[9.565s] Invoked command in '/home/yvxaiver/f1tenth_ws/src/f1tenth_system/planned_path' returned '0': PYTHONPATH=/home/yvxaiver/f1tenth_ws/build/planned_path/prefix_override:/home/yvxaiver/f1tenth_ws/install/planned_path/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/planned_path build --build-base /home/yvxaiver/f1tenth_ws/build/planned_path/build install --record /home/yvxaiver/f1tenth_ws/build/planned_path/install.log --install-scripts $base/lib/planned_path --single-version-externally-managed
