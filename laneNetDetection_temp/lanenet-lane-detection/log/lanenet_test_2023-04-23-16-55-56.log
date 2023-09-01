@@ -1,0 +1,5 @@
+2023-04-23T16:55:58.009250-0500 INFO Start reading image and preprocessing
+2023-04-23T16:55:58.044456-0500 INFO Image load complete, cost time: 0.03316s
+2023-04-23T16:56:03.694786-0500 INFO *** Model Frontend build cost time: 5.55802s
+2023-04-23T16:56:03.767871-0500 INFO *** Model Backend build cost time: 0.07307s
+2023-04-23T16:56:24.101054-0500 INFO Single image inference cost time: 15.65747s

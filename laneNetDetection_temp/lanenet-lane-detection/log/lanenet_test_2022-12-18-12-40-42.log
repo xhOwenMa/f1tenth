@@ -1,0 +1,8 @@
+2022-12-18T12:40:44.054031-0600 INFO Start reading image and preprocessing
+2022-12-18T12:40:44.089824-0600 INFO Image load complete, cost time: 0.03397s
+2022-12-18T12:40:49.635335-0600 INFO *** Model Frontend build cost time: 5.44530s
+2022-12-18T12:40:49.708290-0600 INFO *** Model Backend build cost time: 0.07296s
+2022-12-18T12:41:09.786288-0600 INFO Single image inference cost time: 15.33608s
+2022-12-18T12:41:24.458451-0600 INFO *** *** Pre-DB treament cost time: 14.66210s
+2022-12-18T12:41:24.661578-0600 ERROR Metric 'precomputed' not valid. Use sorted(sklearn.neighbors.VALID_METRICS['ball_tree']) to get valid options. Metric can also be a callable function.
+2022-12-18T12:41:24.663073-0600 INFO *** *** DBSCAN cost time: 0.20474s

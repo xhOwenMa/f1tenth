@@ -1,0 +1,24 @@
+2022-12-17T22:46:45.599096-0600 INFO Start reading image and preprocessing
+2022-12-17T22:46:45.599096-0600 INFO Start reading image and preprocessing
+2022-12-17T22:46:45.599096-0600 INFO Start reading image and preprocessing
+2022-12-17T22:46:45.627134-0600 INFO Image load complete, cost time: 0.02614s
+2022-12-17T22:46:45.627134-0600 INFO Image load complete, cost time: 0.02614s
+2022-12-17T22:46:45.627134-0600 INFO Image load complete, cost time: 0.02614s
+2022-12-17T22:46:50.313437-0600 INFO *** Model Frontend build cost time: 4.61327s
+2022-12-17T22:46:50.313437-0600 INFO *** Model Frontend build cost time: 4.61327s
+2022-12-17T22:46:50.313437-0600 INFO *** Model Frontend build cost time: 4.61327s
+2022-12-17T22:46:50.378391-0600 INFO *** Model Backend build cost time: 0.06497s
+2022-12-17T22:46:50.378391-0600 INFO *** Model Backend build cost time: 0.06497s
+2022-12-17T22:46:50.378391-0600 INFO *** Model Backend build cost time: 0.06497s
+2022-12-17T22:47:09.828288-0600 INFO Single image inference cost time: 15.20705s
+2022-12-17T22:47:09.828288-0600 INFO Single image inference cost time: 15.20705s
+2022-12-17T22:47:09.828288-0600 INFO Single image inference cost time: 15.20705s
+2022-12-17T22:47:09.845548-0600 INFO *** *** Pre-DB treament cost time: 0.00273s
+2022-12-17T22:47:09.845548-0600 INFO *** *** Pre-DB treament cost time: 0.00273s
+2022-12-17T22:47:09.845548-0600 INFO *** *** Pre-DB treament cost time: 0.00273s
+2022-12-17T22:47:09.969775-0600 INFO *** *** DBSCAN cost time: 0.12428s
+2022-12-17T22:47:09.969775-0600 INFO *** *** DBSCAN cost time: 0.12428s
+2022-12-17T22:47:09.969775-0600 INFO *** *** DBSCAN cost time: 0.12428s
+2022-12-17T22:47:09.972136-0600 INFO *** *** Post-db treatment cost time: 0.00238s
+2022-12-17T22:47:09.972136-0600 INFO *** *** Post-db treatment cost time: 0.00238s
+2022-12-17T22:47:09.972136-0600 INFO *** *** Post-db treatment cost time: 0.00238s

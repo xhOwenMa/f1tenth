@@ -1,0 +1,15 @@
+2022-12-18T00:12:20.598354-0600 INFO Start reading image and preprocessing
+2022-12-18T00:12:20.598354-0600 INFO Start reading image and preprocessing
+2022-12-18T00:12:20.598354-0600 INFO Start reading image and preprocessing
+2022-12-18T00:12:20.627943-0600 INFO Image load complete, cost time: 0.02757s
+2022-12-18T00:12:20.627943-0600 INFO Image load complete, cost time: 0.02757s
+2022-12-18T00:12:20.627943-0600 INFO Image load complete, cost time: 0.02757s
+2022-12-18T00:12:25.535338-0600 INFO *** Model Frontend build cost time: 4.82638s
+2022-12-18T00:12:25.535338-0600 INFO *** Model Frontend build cost time: 4.82638s
+2022-12-18T00:12:25.535338-0600 INFO *** Model Frontend build cost time: 4.82638s
+2022-12-18T00:12:25.604704-0600 INFO *** Model Backend build cost time: 0.06938s
+2022-12-18T00:12:25.604704-0600 INFO *** Model Backend build cost time: 0.06938s
+2022-12-18T00:12:25.604704-0600 INFO *** Model Backend build cost time: 0.06938s
+2022-12-18T00:12:44.765066-0600 INFO Single image inference cost time: 15.00912s
+2022-12-18T00:12:44.765066-0600 INFO Single image inference cost time: 15.00912s
+2022-12-18T00:12:44.765066-0600 INFO Single image inference cost time: 15.00912s

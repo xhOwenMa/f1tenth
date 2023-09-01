@@ -1,0 +1,12 @@
+2022-12-17T22:52:47.369529-0600 INFO Start reading image and preprocessing
+2022-12-17T22:52:47.369529-0600 INFO Start reading image and preprocessing
+2022-12-17T22:52:47.369529-0600 INFO Start reading image and preprocessing
+2022-12-17T22:52:47.405109-0600 INFO Image load complete, cost time: 0.03384s
+2022-12-17T22:52:47.405109-0600 INFO Image load complete, cost time: 0.03384s
+2022-12-17T22:52:47.405109-0600 INFO Image load complete, cost time: 0.03384s
+2022-12-17T22:52:52.696431-0600 INFO *** Model Frontend build cost time: 5.22249s
+2022-12-17T22:52:52.696431-0600 INFO *** Model Frontend build cost time: 5.22249s
+2022-12-17T22:52:52.696431-0600 INFO *** Model Frontend build cost time: 5.22249s
+2022-12-17T22:52:52.786899-0600 INFO *** Model Backend build cost time: 0.09049s
+2022-12-17T22:52:52.786899-0600 INFO *** Model Backend build cost time: 0.09049s
+2022-12-17T22:52:52.786899-0600 INFO *** Model Backend build cost time: 0.09049s
