@@ -1,0 +1,105 @@
+[0.466s] Invoking command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake /home/yvxaiver/Desktop/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux
+[6.472s] -- The C compiler identification is GNU 9.4.0
+[6.476s] -- The CXX compiler identification is GNU 9.4.0
+[6.476s] -- Check for working C compiler: /usr/bin/cc
+[6.477s] -- Check for working C compiler: /usr/bin/cc -- works
+[6.477s] -- Detecting C compiler ABI info
+[6.477s] -- Detecting C compiler ABI info - done
+[6.478s] -- Detecting C compile features
+[6.478s] -- Detecting C compile features - done
+[6.479s] -- Check for working CXX compiler: /usr/bin/c++
+[6.479s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.480s] -- Detecting CXX compiler ABI info
+[6.480s] -- Detecting CXX compiler ABI info - done
+[6.481s] -- Detecting CXX compile features
+[6.481s] -- Detecting CXX compile features - done
+[6.481s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.482s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.482s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.484s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.485s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.485s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.273s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.504s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.173s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.622s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.637s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.644s] -- Looking for pthread.h
+[9.416s] -- Looking for pthread.h - found
+[9.421s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.091s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[10.092s] -- Looking for pthread_create in pthreads
+[10.627s] -- Looking for pthread_create in pthreads - not found
+[10.628s] -- Looking for pthread_create in pthread
+[11.250s] -- Looking for pthread_create in pthread - found
+[11.261s] -- Found Threads: TRUE  
+[12.305s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[12.496s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[12.846s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[13.578s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[13.732s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[13.770s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[13.772s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.773s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[13.774s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[13.921s] -- Found PythonExtra: .so  
+[14.012s] -- Added test 'xmllint' to check XML markup files
+[14.019s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.034s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.036s] -- Configured cppcheck include dirs: /home/yvxaiver/Desktop/f1tenth_ws/src/f1tenth_system/ackermann_mux/include
+[14.036s] -- Configured cppcheck exclude dirs and/or files: 
+[14.049s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.049s] -- Configured cpplint exclude dirs and/or files: 
+[14.055s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.062s] -- Added test 'lint_cmake' to check CMake code style
+[14.068s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[14.082s] -- Added test 'uncrustify' to check C / C++ code style
+[14.083s] -- Configured uncrustify additional arguments: 
+[14.134s] -- Configuring done
+[14.175s] -- Generating done
+[14.186s] -- Build files have been written to: /home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux
+[14.292s] Invoked command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake /home/yvxaiver/Desktop/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux
+[14.314s] Invoking command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[14.583s] [35m[1mScanning dependencies of target ackermann_mux[0m
+[14.946s] [ 25%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux.cpp.o[0m
+[14.961s] [ 50%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_node.cpp.o[0m
+[14.985s] [ 75%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_diagnostics.cpp.o[0m
+[61.705s] [100%] [32m[1mLinking CXX executable ackermann_mux[0m
+[63.639s] [100%] Built target ackermann_mux
+[63.704s] Invoked command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --build /home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[63.905s] Invoking command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux
+[63.952s] -- Install configuration: ""
+[63.953s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[63.983s] -- Set runtime path of "/home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux" to ""
+[63.984s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch
+[63.984s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[63.988s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config
+[63.989s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[63.990s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[63.991s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[63.991s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include
+[63.992s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux
+[63.993s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[63.993s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[63.994s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[63.995s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[63.995s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[63.996s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[63.996s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[63.998s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[63.999s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[64.000s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[64.001s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[64.001s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[64.003s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[64.004s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[64.005s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[64.005s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[64.007s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[64.008s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[64.009s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[64.009s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[64.011s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[64.011s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[64.012s] -- Installing: /home/yvxaiver/Desktop/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[64.032s] Invoked command in '/home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yvxaiver/f1tenth_ws/install/f1tenth_stack:/home/yvxaiver/f1tenth_ws/install/joy_teleop:/home/yvxaiver/f1tenth_ws/install/planned_path:/home/yvxaiver/f1tenth_ws/install/mouse_teleop:/home/yvxaiver/f1tenth_ws/install/lanenet_driver:/home/yvxaiver/f1tenth_ws/install/key_teleop:/home/yvxaiver/camera_ws/install/lanenet_postprocess:/home/yvxaiver/camera_ws/install/image_processor:/home/yvxaiver/camera_ws/install/inv_mux:/opt/ros/foxy /usr/bin/cmake --install /home/yvxaiver/Desktop/f1tenth_ws/build/ackermann_mux

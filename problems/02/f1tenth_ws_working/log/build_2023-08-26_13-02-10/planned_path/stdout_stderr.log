@@ -1,0 +1,35 @@
+running egg_info
+creating ../../../build/planned_path/planned_path.egg-info
+writing ../../../build/planned_path/planned_path.egg-info/PKG-INFO
+writing dependency_links to ../../../build/planned_path/planned_path.egg-info/dependency_links.txt
+writing entry points to ../../../build/planned_path/planned_path.egg-info/entry_points.txt
+writing requirements to ../../../build/planned_path/planned_path.egg-info/requires.txt
+writing top-level names to ../../../build/planned_path/planned_path.egg-info/top_level.txt
+writing manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+reading manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+writing manifest file '../../../build/planned_path/planned_path.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build
+creating /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib
+creating /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib/planned_path
+copying planned_path/__init__.py -> /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib/planned_path
+copying planned_path/ppath_control.py -> /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib/planned_path
+running install
+running install_lib
+creating /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+copying /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib/planned_path/__init__.py -> /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+copying /home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/build/lib/planned_path/ppath_control.py -> /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path
+byte-compiling /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path/ppath_control.py to ppath_control.cpython-38.pyc
+running install_data
+creating /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/share/ament_index
+creating /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/share/ament_index/resource_index
+creating /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/share/ament_index/resource_index/packages
+copying resource/planned_path -> /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/share/ament_index/resource_index/packages
+copying package.xml -> /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/share/planned_path
+running install_egg_info
+Copying ../../../build/planned_path/planned_path.egg-info to /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/python3.8/site-packages/planned_path-0.0.0-py3.8.egg-info
+running install_scripts
+Installing ppath script to /home/yvxaiver/Desktop/f1tenth_ws/install/planned_path/lib/planned_path
+writing list of installed files to '/home/yvxaiver/Desktop/f1tenth_ws/build/planned_path/install.log'
