@@ -1,5 +1,0 @@
-  File "/home/yvxaiver/f1tenth_ws/install/lanenet_driver/lib/python3.8/site-packages/lanenet_driver/lanenet_driver_node.py", line 25
-    self.joy_subscriber_ = self.create_subscription(Joy, ,'/joy', self.joy_callback, 1)
-                                                         ^
-SyntaxError: invalid syntax
-
