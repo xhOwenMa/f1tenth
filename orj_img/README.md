@@ -1,6 +1,6 @@
-# Image Dataset Notes
+# Image Dataset
 
-This folder contains all the dataset, including the images we collected as well as the images from previous groups
+This folder contains all the images, including the images we collected as well as the images from previous groups
 
 ### Additional Notes
 
