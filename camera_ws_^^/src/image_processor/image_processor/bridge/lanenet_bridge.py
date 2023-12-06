@@ -10,13 +10,12 @@ import time
 from points_vector.msg import PointsVector
 from geometry_msgs.msg import Point
 
-# import sklearn 
 import cv2
 import numpy as np
-# import tensorflow as tf
 import torch
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
+from numpy.polynomial import Polynomial
 
 sys.path.append('/home/yvxaiver/lanenet-lane-detection')
 # from lanenet_model import lanenet
@@ -31,8 +30,6 @@ LOG = init_logger.get_logger(log_file_name_prefix='lanenet_test')
 
 sys.path.append('/home/yvxaiver/LaneNet_to_Trajectory')
 # from LaneNetToTrajectory import LaneProcessing, DualLanesToTrajectory
-
-from numpy.polynomial import Polynomial
 
 
 class LaneNetImageProcessor():
@@ -92,40 +89,13 @@ class LaneNetImageProcessor():
 
         self.img_counter = 0
 
-        """
-        self.input_tensor = tf.placeholder(dtype=tf.float32, shape=[1, 256, 512, 3], name='input_tensor')
-
-        self.net = lanenet.LaneNet(phase='test', cfg=CFG)
-        self.binary_seg_ret, self.instance_seg_ret = self.net.inference(input_tensor=self.input_tensor, name='LaneNet')
-
-        self.postprocessor = lanenet_postprocess.LaneNetPostProcessor(cfg=CFG)
-
-        # Set sess configuration
-        sess_config = tf.ConfigProto()
-        sess_config.gpu_options.per_process_gpu_memory_fraction = CFG.GPU.GPU_MEMORY_FRACTION
-        sess_config.gpu_options.allow_growth = CFG.GPU.TF_ALLOW_GROWTH
-        sess_config.gpu_options.allocator_type = 'BFC'
-
-        self.sess = tf.Session(config=sess_config)
-
-        # define moving average version of the learned variables for eval
-        with tf.variable_scope(name_or_scope='moving_avg'):
-            variable_averages = tf.train.ExponentialMovingAverage(
-                CFG.SOLVER.MOVING_AVE_DECAY)
-            variables_to_restore = variable_averages.variables_to_restore()
-
-        # define saver
-        self.saver = tf.train.Saver(variables_to_restore)
-
-        with self.sess.as_default():
-            self.saver.restore(sess=self.sess, save_path=self.weights_path)
-        """
-
         return True
 
     def image_to_trajectory(self, cv_image, x_pos, y_pos, yaw, lane_fit=True):
 
         T_start = time.time()
+
+        cv2.imshow("original frame", cv_image)
 
         image_vis = cv_image
         image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
@@ -185,7 +155,8 @@ class LaneNetImageProcessor():
         )
 
         if lane_pts is None:
-            return None, None, None
+            return None, None
+            # return None, None, None
 
         lane_pts = lane_pts[lane_pts[:, 1].argsort()]
         lanes = []
@@ -250,34 +221,29 @@ class LaneNetImageProcessor():
                 del lanes[i]
 
         # below is a moving average approach to smooth the lanes
-        for i in range(len(lanes)):
-            window_size = 5  # this is hard-coded, experiment with it and choose the best performing one
-            weights = np.ones(window_size) / window_size
-            smoothed_lane_x = np.convolve(lanes[i][0], weights, mode='valid')
-            lanes[i][0] = smoothed_lane_x
+        # for i in range(len(lanes)):
+        #     window_size = 5  # this is hard-coded, experiment with it and choose the best performing one
+        #     weights = np.ones(window_size) / window_size
+        #     smoothed_lane_x = np.convolve(lanes[i][0], weights, mode='valid')
+        #     lanes[i][0] = smoothed_lane_x
 
         full_lane_pts = []
         polynomials = []
 
+        # give a polynomial fit to each lane
         for i in range(len(lanes)):
-            p1, e1 = Polynomial.fit(lanes[i][1], lanes[i][0], 1, full=True)
-            p3, e3 = Polynomial.fit(lanes[i][1], lanes[i][0], 3, full=True)
-
-            if 8 * e3[0][0] > e1[0][0]:
-                p = p1
-            else:
-                p = p3
+            p = Polynomial.fit(lanes[i][1], lanes[i][0], 3)
 
             # smooth the lanes again, leveraging the polynomial fit
-            smoothed_x = np.polyval(p, lanes[i][1])
-            residual_x = lanes[i][0] - smoothed_x
-            x_deviate_threshold = 2 * np.std(residual_x)
-            alpha = 0.5  # weighting factor for adjustment
-            adjusted_x = np.copy(lanes[i][0])
-            for idx, res in enumerate(residual_x):
-                if abs(res) > x_deviate_threshold:
-                    adjusted_x[idx] = alpha * lanes[i][0][idx] + (1 - alpha) * smoothed_x[idx]
-            lanes[i][0] = adjusted_x
+            # smoothed_x = np.polyval(p, lanes[i][1])
+            # residual_x = lanes[i][0] - smoothed_x
+            # x_deviate_threshold = 2 * np.std(residual_x)
+            # alpha = 0.5  # weighting factor for adjustment
+            # adjusted_x = np.copy(lanes[i][0])
+            # for idx, res in enumerate(residual_x):
+            #     if abs(res) > x_deviate_threshold:
+            #         adjusted_x[idx] = alpha * lanes[i][0][idx] + (1 - alpha) * smoothed_x[idx]
+            # lanes[i][0] = adjusted_x
 
             dy, dx = p.linspace(20)
             # full_lane_pts.append(np.dstack((np.int_(dx), np.int_(dy))).reshape(2, 20))
@@ -287,139 +253,106 @@ class LaneNetImageProcessor():
             for j in range(20):
                 cv2.circle(warped2, (np.int_(dx[j]), np.int_(dy[j])), 5, (0, 255, 0), -1)
 
+        cv2.imshow("polynomial fit", cv2.flip(warped2, 0))
         # cv2.imwrite('/home/yvxaiver/output/lanes/%d.png' % self.img_counter, cv2.flip(warped2, 0))
 
         self.full_lane_pts = full_lane_pts
 
-        # print('Number of full lane pts: {}'.format(len(self.full_lane_pts)))
+        # if self.calibration:
+        #     print(self.lane_processor.WARP_RADIUS)
+        #     print(self.lane_processor.get_wp_to_m_coeff())
+        #     self.calibration = False
+        #     raise SystemExit
 
-        # self.lane_processor.process_next_lane(full_lane_pts)
-        # full_lane_pts = self.lane_processor.get_full_lane_pts()
-        # physical_fullpts = self.lane_processor.get_physical_fullpts()
-        """
-        physical_fullpts = []
-        for lane in self.full_lane_pts:
-            physical_fullpts.append(lane * self.WP_TO_M_Coeff)
-        """
-        # print('Number of physical full pts: {}'.format(len(physical_fullpts)))
+        car_x_pos = self.image_width / 2.0
+        right_lanes = []
+        left_lanes = []
+        for i, lane in enumerate(self.full_lane_pts):
+            median_x = np.median(lane[0])
+            self.get_logger().info(f"median of x coordinate for lane {i} is {median_x}")
+            diff = abs(median_x - car_x_pos)
+            if median_x < car_x_pos:
+                left_lanes.append(np.array([i, diff]))
+            else:
+                right_lanes.append(np.array([i, diff]))
 
-        """
-        for i in range(len(full_lane_pts)):
-            for j in range(len(full_lane_pts[i])):
-                print('Lane PIXELS: ', full_lane_pts[i][j][0], ' ', full_lane_pts[i][j][1])
-                print('Lane METERS: ', physical_fullpts[i][j][0], ' ', physical_fullpts[i][j][1])
-                print('----------------------------------------')
-	"""
+        if left_lanes:
+            # Find the index of the lane with the smallest diff
+            left_lane_index = int(min(left_lanes, key=lambda lane_diff: lane_diff[1])[0])
+            shifted_left_lane_pts = self.shift(lanes[left_lane_index], x_pos, y_pos, yaw)
+            self.left_lane = Polynomial.fit(shifted_left_lane_pts[1], shifted_left_lane_pts[0], 3)
+        else:
+            self.left_lane = None  # or some default value
+        if right_lanes:
+            # Find the index of the lane with the smallest diff
+            right_lane_index = int(min(right_lanes, key=lambda lane_diff: lane_diff[1])[0])
+            shifted_right_lane_pts = self.shift(lanes[right_lane_index], x_pos, y_pos, yaw)
+            self.right_lane = Polynomial.fit(shifted_right_lane_pts[1], shifted_right_lane_pts[0], 3)
+        else:
+            self.right_lane = None  # or some default value
 
-        if self.calibration:
-            print(self.lane_processor.WARP_RADIUS)
-            print(self.lane_processor.get_wp_to_m_coeff())
-            self.calibration = False
-            raise SystemExit
+        self.x_pos = x_pos
+        self.y_pos = y_pos
+        self.yaw = yaw
 
-        """
-        phy_centerpts = []
-        phy_splines = []
-        closest_lane_dist = float('inf')
-        closest_lane_idx = 0
-        if physical_fullpts:
-            #print(physical_fullpts)
-            for i in range(len(physical_fullpts)):
-                if not i: continue
-                traj = DualLanesToTrajectory(physical_fullpts[i-1],physical_fullpts[i],N_centerpts=20)
-                phy_centerpts.append(traj.get_centerpoints())
-                phy_splines.append(traj.get_spline())
-            min_center_y_val = float('inf')
-            #for lane in phy_centerpts:
-                #if min(lane[1]) < min_center_y_val: min_center_y_val = min(lane[1])
-            for i in range(len(phy_splines)):
-                new_dist = abs(phy_splines[i](0.2)-(self.image_width*self.WP_TO_M_Coeff[0])/2)
-                if new_dist < closest_lane_dist:
-                    closest_lane_dist = new_dist
-                    closest_lane_idx = i
-            if phy_centerpts: self.following_path = phy_centerpts[closest_lane_idx]
+        dy, dx = self.left_lane.linspace(20)
+        for x, y in zip(np.int_(dx), np.int_(dy)):
+            cv2.circle(warped2, (x, y), 5, (0, 255, 0), -1)  # Green circle
 
+        dy, dx = self.right_lane.linspace(20)
+        for x, y in zip(np.int_(dx), np.int_(dy)):
+            cv2.circle(warped2, (x, y), 5, (0, 255, 0), -1)  # Green circle
 
-
-        # For display output
-        centerpts = []
-        if full_lane_pts:
-            for i in range(len(full_lane_pts)):
-                if not i: continue
-                traj = DualLanesToTrajectory(full_lane_pts[i-1],full_lane_pts[i],N_centerpts=20)
-                centerpts.append(traj.get_centerpoints())
-        """
-
-        changed = False
-
-        if self.full_lane_pts and self.full_lane_pts[0][0][0] < self.image_width / 2 < self.full_lane_pts[-1][0][0]:
-            for i in range(1, len(lanes)):
-                if self.full_lane_pts[i][0][0] > self.image_width / 2:
-                    shifted_lane_pts = self.shift(lanes[i - 1], x_pos, y_pos, yaw)
-                    shifted_p = Polynomial.fit(shifted_lane_pts[1], shifted_lane_pts[0], polynomials[i - 1].degree())
-
-                    if self.left_lane is None or self.compare_lanes(self.left_lane, shifted_p):
-                        self.left_lane = shifted_p
-                        self.left_lane_pts = shifted_lane_pts
-                        changed = True
-                        LOG.info('Found new left lane')
-
-                    shifted_lane_pts = self.shift(lanes[i], x_pos, y_pos, yaw)
-                    shifted_p = Polynomial.fit(shifted_lane_pts[1], shifted_lane_pts[0], polynomials[i].degree())
-
-                    if self.right_lane is None or self.compare_lanes(self.right_lane, shifted_p):
-                        self.right_lane = shifted_p
-                        self.right_lane_pts = shifted_lane_pts
-                        changed = True
-                        LOG.info('Found new right lane')
-
-                    break
-
-        if changed:
-            if self.left_lane is not None:
-                self.left_lane_pts = self.shift(self.left_lane_pts, x_pos, y_pos, yaw, old_to_new=1)
-                self.left_lane = Polynomial.fit(self.left_lane_pts[1], self.left_lane_pts[0], self.left_lane.degree())
-                dy, dx = self.left_lane.linspace(20)
-                self.left_lane_fullpts = [dx, dy]
-
-            if self.right_lane is not None:
-                self.right_lane_pts = self.shift(self.right_lane_pts, x_pos, y_pos, yaw, old_to_new=1)
-                self.right_lane = Polynomial.fit(self.right_lane_pts[1], self.right_lane_pts[0],
-                                                 self.right_lane.degree())
-                dy, dx = self.right_lane.linspace(20)
-                self.right_lane_fullpts = [dx, dy]
-
-            self.x_pos = x_pos
-            self.y_pos = y_pos
-            self.yaw = yaw
-
-        """
-        phy_centerpts = []
-        for i in range(len(lanes)-1): 
-            y_min = max(polynomials[i].domain[0], polynomials[i+1].domain[0])
-            y_max = min(polynomials[i].domain[1], polynomials[i+1].domain[1])
-
-            dy = np.linspace(y_min, y_max, 20)
-            dx = (polynomials[i](dy) + polynomials[i+1](dy)) / 2
-            phy_centerpts.append([dx * self.WP_TO_M_Coeff[0], dy * self.WP_TO_M_Coeff[1]])
-
-        self.phy_centerpts = phy_centerpts
-        """
-
-        if changed and self.left_lane is not None and self.right_lane is not None:
-            dy = np.linspace(0, min(self.left_lane.domain[1], self.right_lane.domain[1]), 20)
-            dx = (self.left_lane(dy) + self.right_lane(dy)) / 2
-            self.following_path = [dx * self.WP_TO_M_Coeff[0], dy * self.WP_TO_M_Coeff[1]]
+        cv2.imshow("left and right lane on original frame", cv_image)
 
         T_post_process = time.time()
         LOG.info('Image Post-Process cost time: {:.5f}s'.format(T_post_process - T_seg_inference))
 
-        # return changed, self.full_lane_pts, self.phy_centerpts, self.following_path
+        return self.left_lane, self.right_lane
 
-        return changed, self.left_lane_fullpts, self.right_lane_fullpts, self.following_path
+        # changed = False
+        #
+        # if self.full_lane_pts and self.full_lane_pts[0][0][0] < self.image_width / 2 < self.full_lane_pts[-1][0][0]:
+        #     for i in range(1, len(lanes)):
+        #         if self.full_lane_pts[i][0][0] > self.image_width / 2:
+        #             shifted_lane_pts = self.shift(lanes[i - 1], x_pos, y_pos, yaw)
+        #             shifted_p = Polynomial.fit(shifted_lane_pts[1], shifted_lane_pts[0], polynomials[i - 1].degree())
+        #
+        #             if self.left_lane is None or self.compare_lanes(self.left_lane, shifted_p):
+        #                 self.left_lane = shifted_p
+        #                 self.left_lane_pts = shifted_lane_pts
+        #                 changed = True
+        #                 LOG.info('Found new left lane')
+        #
+        #             shifted_lane_pts = self.shift(lanes[i], x_pos, y_pos, yaw)
+        #             shifted_p = Polynomial.fit(shifted_lane_pts[1], shifted_lane_pts[0], polynomials[i].degree())
+        #
+        #             if self.right_lane is None or self.compare_lanes(self.right_lane, shifted_p):
+        #                 self.right_lane = shifted_p
+        #                 self.right_lane_pts = shifted_lane_pts
+        #                 changed = True
+        #                 LOG.info('Found new right lane')
+        #
+        #             break
+        #
+        # if changed:
+        #     if self.left_lane is not None:
+        #         self.left_lane_pts = self.shift(self.left_lane_pts, x_pos, y_pos, yaw, old_to_new=1)
+        #         self.left_lane = Polynomial.fit(self.left_lane_pts[1], self.left_lane_pts[0], self.left_lane.degree())
+        #         dy, dx = self.left_lane.linspace(20)
+        #         self.left_lane_fullpts = [dx, dy]
+        #
+        #     if self.right_lane is not None:
+        #         self.right_lane_pts = self.shift(self.right_lane_pts, x_pos, y_pos, yaw, old_to_new=1)
+        #         self.right_lane = Polynomial.fit(self.right_lane_pts[1], self.right_lane_pts[0],
+        #                                          self.right_lane.degree())
+        #         dy, dx = self.right_lane.linspace(20)
+        #         self.right_lane_fullpts = [dx, dy]
 
-        # if centerpts: return full_lane_pts, centerpts, self.following_path
-        # return None, None, None
+        # if changed and self.left_lane is not None and self.right_lane is not None:
+        #     dy = np.linspace(0, min(self.left_lane.domain[1], self.right_lane.domain[1]), 20)
+        #     dx = (self.left_lane(dy) + self.right_lane(dy)) / 2
+        #     self.following_path = [dx * self.WP_TO_M_Coeff[0], dy * self.WP_TO_M_Coeff[1]]
 
     def shift(self, pts, x, y, yaw, old_to_new=0, pixels=True):
         sign = np.power(-1, old_to_new)

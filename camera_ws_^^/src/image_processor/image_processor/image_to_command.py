@@ -103,12 +103,12 @@ class ImageToCommand(Node):
             msg.drive.steering_angle_velocity = 0.05
             msg.drive.speed = curr_speed
             msg.drive.acceleration = throttle
-            msg.drive.jerk = 0.05
+            msg.drive.jerk = 0
 
             self.get_logger().info("Publishing on drive...")
             self.publisher_.publish(msg)
         except Exception as e:
-            print(e)
+            self.get_logger().info(f"{e}")
 
     def load_model(self, model_path):
         model = NeuralNetwork()  # Make sure this is the same architecture as used during training
@@ -134,7 +134,7 @@ class ImageToCommand(Node):
         img = cv2.normalize(img, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_32F)
         img = img.astype(np.uint8)
         img = cv2.resize(img, (600, 400))
-        cv2.imshow("image", img)
+        # cv2.imshow("image", img)
 
         # trajectory to follow is the mean of left and right lane boundary
         # note that we multiply with -0.5 instead of 0.5 in the formula for y below
