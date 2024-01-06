@@ -1,3 +1,0 @@
-[console_scripts]
-ppath = planned_path.ppath_control:main
-

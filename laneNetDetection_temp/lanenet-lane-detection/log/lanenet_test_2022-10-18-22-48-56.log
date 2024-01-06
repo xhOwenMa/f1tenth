@@ -1,8 +1,0 @@
-2022-10-18T22:48:57.880619-0500 INFO Start reading image and preprocessing
-2022-10-18T22:48:57.980152-0500 INFO Image load complete, cost time: 0.09602s
-2022-10-18T22:49:05.134408-0500 INFO *** Model Frontend build cost time: 7.04119s
-2022-10-18T22:49:05.209004-0500 INFO *** Model Backend build cost time: 0.07460s
-2022-10-18T22:49:53.491596-0500 INFO Single image inference cost time: 33.80053s
-2022-10-18T22:49:53.587444-0500 INFO *** *** Pre-DB treament cost time: 0.00889s
-2022-10-18T22:49:53.805369-0500 INFO *** *** DBSCAN cost time: 0.21796s
-2022-10-18T22:49:53.808210-0500 INFO *** *** Post-db treatment cost time: 0.00285s

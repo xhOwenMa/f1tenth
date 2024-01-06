@@ -1,8 +1,0 @@
-2022-12-17T23:57:10.128743-0600 INFO Start reading image and preprocessing
-2022-12-17T23:57:10.162526-0600 INFO Image load complete, cost time: 0.03164s
-2022-12-17T23:57:15.118278-0600 INFO *** Model Frontend build cost time: 4.86675s
-2022-12-17T23:57:15.202519-0600 INFO *** Model Backend build cost time: 0.08425s
-2022-12-17T23:57:34.611820-0600 INFO Single image inference cost time: 15.32652s
-2022-12-17T23:57:51.283656-0600 INFO *** *** Pre-DB treament cost time: 16.66213s
-2022-12-17T23:57:51.301231-0600 ERROR Adjacency matrix not square: nx,ny=(3943, 4)
-2022-12-17T23:57:51.303460-0600 INFO *** *** DBSCAN cost time: 0.01992s
